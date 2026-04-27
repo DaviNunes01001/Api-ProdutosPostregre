@@ -1,0 +1,78 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.2em;
+  color: #667eea;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* NAV */
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+
+
+a:hover {
+  border-bottom: 2px solid #667eea;
+  color: #667eea;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* BLOCO CENTRAL */
+.Block {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* TEXTO */
+.Block h3 {
+  font-size: 1.3em;
+  color: #555;
+}
