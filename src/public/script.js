@@ -241,7 +241,7 @@ async function buscarprodutoss(tipo, valor) {
         let url = ''; // URL dinâmica
 
         if (tipo === 'nome') {
-            url = `/produtos/nome/${encodeURIComponent(valor)}`; // Busca por nome (encode evita erro em URL)
+            url = `/produtos/buscar-nome/${encodeURIComponent(valor)}`; // Busca por nome (encode evita erro em URL)
         } else if (tipo === 'id') {
             url = `/produtos/${valor}`; // Busca por ID
         } else if (tipo === 'categoria') {

@@ -12,11 +12,10 @@ const ProdutoController = require('../controllers/produtoController');
 // GET /produtos - Listar todos os produtos
 router.get('/', ProdutoController.listarTodos);
 
+router.get('/buscar-nome/:nome', ProdutoController.buscarPorNome);
+
 // GET /produtos/categoria/:categoria - Buscar por categoria (ESPECÍFICA - VEM PRIMEIRO)
 router.get('/categoria/:categoria', ProdutoController.buscarPorCategoria);
-
-// GET /produtos/buscar-nome/:nome - Buscar por nome (ESPECÍFICA - VEM SEGUNDO)
-router.get('/buscar-nome/:nome', ProdutoController.buscarPorNome);
 
 // GET /produtos/:id - Buscar produto específico por ID (GENÉRICA - VEM POR ÚLTIMO)
 router.get('/:id', ProdutoController.buscarPorId);
